@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Google Map</title>
+    <style>
+      #map{
+        height:400px;
+        width:100%;
+      }
+
+      #heading{
+
+      }
+      </style>
+  </head>
+  <body>
+    <h1 id="heading">RIT GO</h1>
+  <div id="map">
+  </div>
+
+    <script>
+      function loc() {
+        var place = document.getElementById("go").value;
+      }
+      function initMap() {
+      var options = {
+        zoom:25,
+        center:{lat:13.030944,lng:77.564814}
+      }
+      var map = new google.maps.Map(
+     document.getElementById('map'), options);
+      }
+
+    </script>
+    <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoDFdmyfSTAMLqMTc56ng9EjT7V-H3kL0&callback=initMap">
+   </script>
+
+  </body>
+</html>

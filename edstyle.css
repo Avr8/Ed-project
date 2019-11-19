@@ -1,0 +1,26 @@
+body{
+  background: url('ed1.jpg');
+
+}
+#heading{
+font-size: 36px;
+font: serif;
+}
+.main{
+  display: flex;
+  background-color: black;
+  flex-wrap: wrap;
+  justify-content: center;
+  color:#ffffff;
+  top: 10%;
+  left: 40%;
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 20px;
+  width:200px;
+}
+#go{
+  border-radius: 20px;
+  background-color: yellow;
+  right:40%;
+}
